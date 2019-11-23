@@ -57,8 +57,29 @@ verseSopranoVoice = \lyricmode {
 altoVoice = \relative c' {
   \global
   \dynamicUp
-  % Music follows here.
+  a'2
+  a4 f f f
+  e2 d2
+  d2 c2
+  d4. a8 c2
+  c2
   
+  a'2
+  a4 f f f
+  e2 d2
+  d2 c2
+  d4. a8 c2
+  c2
+  
+  r4 f
+  d c c b
+  c8 (d e4) r e
+  
+  g f f f
+  e2 d
+  d f4 d
+  e (f g) c,
+  c1  
 }
 
 verseAltoVoice = \lyricmode {
@@ -69,8 +90,30 @@ verseAltoVoice = \lyricmode {
 tenorVoice = \relative c' {
   \global
   \dynamicUp
-  % Music follows here.
+  c2
+  c4 a bes a
+  g2 f2
+  f2 a4 c
+  bes (a2) g4
+  a2
   
+  c2
+  c4 a bes a
+  g2 f
+  f a4 c
+  bes (a2) g4
+  a2
+  
+  r4 c
+  bes a a g
+  g2 r4 g
+  
+  g a bes a
+  g2 fis
+  g
+  c4 bes
+  a2 g
+  a1
 }
 
 verseTenorVoice = \lyricmode {
@@ -102,7 +145,7 @@ bassVoice = \relative c {
   
   d2 g,2
   a4 bes c2
-  c2 f,1 \bar "|."  
+  c2 f,1 \bar "|."
 }
 
 verseOneBass = \lyricmode {
@@ -138,22 +181,24 @@ altoVoicePart = \new Staff \with {
   shortInstrumentName = "A."
   midiInstrument = "choir aahs"
 } { \altoVoice }
-%\addlyrics { \verseAltoVoice }
+\addlyrics { \verseOneBass }
+\addlyrics { \verseTwoBass }
 
 tenorVoicePart = \new Staff \with {
   instrumentName = "T."
   shortInstrumentName = "T."
   midiInstrument = "choir aahs"
 } { \clef "treble_8" \tenorVoice }
-%\addlyrics { \verseTenorVoice }
+%\addlyrics { \verseOneBass }
+%\addlyrics { \verseTwoBass }
 
 bassVoicePart = \new Staff \with {
   instrumentName = "B."
   shortInstrumentName = "B."
   midiInstrument = "choir aahs"
 } { \clef bass \bassVoice }
-\addlyrics { \verseOneBass }
-\addlyrics { \verseTwoBass }
+%\addlyrics { \verseOneBass }
+%\addlyrics { \verseTwoBass }
 
 \score {
   <<
