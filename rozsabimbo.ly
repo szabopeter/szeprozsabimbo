@@ -148,7 +148,8 @@ bassVoice = \relative c {
 }
 
 verseOneBass = \lyricmode {
-  "1. Szép" ró -- zsa bim -- bó nyílt ki
+  \set stanza = "1."
+  Szép ró -- zsa bim -- bó nyílt ki
   Haj -- dan egy zsen -- ge tőn
   Mint ő -- si é -- nek zen -- gi
   Bim -- bó -- ból ró -- zsa lőn
@@ -158,7 +159,8 @@ verseOneBass = \lyricmode {
 }
 
 verseTwoBass = \lyricmode {
-  "2. El" -- jött az ál -- dott ó -- ra,
+  \set stanza = "2."
+  El -- jött az ál -- dott ó -- ra,
   Szí -- vünk -- re bé -- ke szállt,
   Tes -- tünk már nyu -- go -- vó -- ra,
   Lel -- künk á -- lom -- ra várt.
