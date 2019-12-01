@@ -43,7 +43,7 @@ sopranoVoice = \relative c'' {
   c2 r4 c'
   c c d c
   c2 a
-  bes a4 g
+  bes4 r4 a4 g
   (g) f2 e4
   f1
 }
@@ -77,7 +77,7 @@ altoVoice = \relative c' {
   
   g f f f
   e2 d
-  d f4 d
+  d4 r4 f4 d
   e (f g) c,
   c1  
 }
@@ -110,8 +110,7 @@ tenorVoice = \relative c' {
   
   g a bes a
   g2 fis
-  g
-  c4 bes
+  g4 r4 c4 bes
   a2 g
   a1
 }
@@ -138,14 +137,14 @@ bassVoice = \relative c {
   d2 c2
   f, \break  
   
-  r4 f'4 g a 
-  f g c,2
-  r4 c4 e f 
-  bes, f' c2 \break
-  
-  d2 g,2
-  a4 bes c2
-  c2 f,1 \bar "|."
+  r4 f'4
+  g a f g 
+  c,2 r4 c4
+  e f bes, f'
+  c2 d 
+  g,4 r4 a4 bes
+  c2 c2
+  f,1 \bar "|."
 }
 
 verseOneBass = \lyricmode {
@@ -164,30 +163,30 @@ verseTwoBass = \lyricmode {
   Tes -- tünk már nyu -- go -- vó -- ra,
   Lel -- künk á -- lom -- ra várt.
   Ki -- tá -- rult az ég -- bolt,
-  A cso -- da tes -- tet öl -- tött,
+  Az i -- ge tes -- tet öl -- tött,
   Épp, mi -- kor éj -- fél volt.
 }  
 
 sopranoVoicePart = \new Staff \with {
   instrumentName = "S."
   shortInstrumentName = "S."
-  midiInstrument = "choir aahs"
+  midiInstrument = "acoustic grand"
 } { \sopranoVoice }
-\addlyrics { \verseOneBass }
-\addlyrics { \verseTwoBass }
+%\addlyrics { \verseOneBass }
+%\addlyrics { \verseTwoBass }
 
 altoVoicePart = \new Staff \with {
   instrumentName = "A."
   shortInstrumentName = "A."
-  midiInstrument = "choir aahs"
+  midiInstrument = "acoustic grand"
 } { \altoVoice }
-\addlyrics { \verseOneBass }
-\addlyrics { \verseTwoBass }
+%\addlyrics { \verseOneBass }
+%\addlyrics { \verseTwoBass }
 
 tenorVoicePart = \new Staff \with {
   instrumentName = "T."
   shortInstrumentName = "T."
-  midiInstrument = "choir aahs"
+  midiInstrument = "acoustic grand"
 } { \clef "treble_8" \tenorVoice }
 %\addlyrics { \verseOneBass }
 %\addlyrics { \verseTwoBass }
@@ -195,10 +194,10 @@ tenorVoicePart = \new Staff \with {
 bassVoicePart = \new Staff \with {
   instrumentName = "B."
   shortInstrumentName = "B."
-  midiInstrument = "choir aahs"
+  midiInstrument = "acoustic grand"
 } { \clef bass \bassVoice }
-%\addlyrics { \verseOneBass }
-%\addlyrics { \verseTwoBass }
+\addlyrics { \verseOneBass }
+\addlyrics { \verseTwoBass }
 
 \score {
   <<
