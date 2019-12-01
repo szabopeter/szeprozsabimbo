@@ -159,7 +159,7 @@ verseOneBass = \lyricmode {
 }
 
 verseTwoBass = \lyricmode {
-  \set stanza = "2."
+  \set stanza = \markup { \dynamic "p" "2." }
   El -- jött az ál -- dott ó -- ra,
   Szí -- vünk -- re bé -- ke szállt,
   Tes -- tünk már nyu -- go -- vó -- ra,
