@@ -6,6 +6,7 @@ done
 rm release/*.midi
 rm release/*.pdf
 mv satb.midi release/satb-zongora.midi
+mv kotta.midi release/satb-enek.midi
 mv satb.pdf release/kotta.pdf
 mv kotta.pdf release/kiskotta.pdf
 

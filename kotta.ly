@@ -2,7 +2,7 @@
 
 sopranoVoicePart = \new Staff \with {
   instrumentName = \markup \center-column { S A }
-  midiInstrument = "acoustic grand"
+  midiInstrument = "choir aahs"
 } <<
     \new Voice = "soprano" { \sopranoVoice }
     \new Voice = "alto" { \altoVoice }
@@ -10,7 +10,7 @@ sopranoVoicePart = \new Staff \with {
 
 bassVoicePart = \new Staff \with {
   instrumentName = \markup \center-column { T B }
-  midiInstrument = "acoustic grand"
+  midiInstrument = "choir aahs"
 } <<
     \clef bass 
     \new Voice = "tenor" { \tenorVoice }
