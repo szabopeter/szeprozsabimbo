@@ -38,6 +38,9 @@ sopranoVoice = \relative c'' {
   (g) f2 e4
   f2 \break
 
+  %\repeat volta 2 {
+  % \set Score.repeatCommands = #'(("x") start-repeat)
+  \mark \markup { \musicglyph #"scripts.segno" }
   r4 a4 
   g e f d 
   c2 r4 c'
@@ -45,6 +48,7 @@ sopranoVoice = \relative c'' {
   c2 a
   bes4 r4 a4 g
   (g) f2 e4
+  \mark 	\markup { \small {\bold "2." \italic "D.S. al Fine"} }
   f1
 }
 
